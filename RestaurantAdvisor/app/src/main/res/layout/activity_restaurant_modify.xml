@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restaurant.RestaurantAddActivity"
+    android:background="@drawable/gradient_black"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etRestaurantName"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:padding="5dp"
+        android:background="@color/transparent_white"
+        android:gravity="center"
+        android:hint="@string/restaurant_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etRestaurantDescription"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_white"
+        android:hint="@string/description"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantName" />
+
+    <EditText
+        android:id="@+id/etRestaurantGrade"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_white"
+        android:hint="@string/grade"
+        android:inputType="numberDecimal|numberSigned"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantDescription" />
+
+    <EditText
+        android:id="@+id/etRestaurantLocalization"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_white"
+        android:hint="@string/localization"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantGrade" />
+
+    <EditText
+        android:id="@+id/etRestaurantPhone"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_white"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantLocalization" />
+
+    <EditText
+        android:id="@+id/etRestaurantWebsite"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_white"
+        android:hint="@string/website"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantPhone" />
+
+    <EditText
+        android:id="@+id/etRestaurantHours"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparent_white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_white"
+        android:hint="@string/hours"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantWebsite" />
+
+    <Button
+        android:id="@+id/bModRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/modify_restaurant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRestaurantHours" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

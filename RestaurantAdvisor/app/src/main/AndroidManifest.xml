@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurantadvisor">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launch"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launch"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".comments.CommentsActivity"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:noHistory="true" />
+        <activity
+            android:name=".menu.MenuActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".menu.MenuModifyActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".menu.MenuAddActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".restaurant.RestaurantModifyActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".restaurant.RestaurantAddActivity"
+            android:noHistory="true" />
+        <activity android:name=".restaurant.RestaurantActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.UserRegisterActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".user.UserLoginActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".user.UserProfileActivity"
+            android:noHistory="true" />
+    </application>
+
+</manifest>
